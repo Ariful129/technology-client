@@ -23,7 +23,7 @@ const MyCart = () => {
     const handleDelete =(_id) =>{
         console.log('Delete', _id)
         //_id Transfer to server side 
-        fetch(`http://localhost:5000/addcart/${_id}`,{
+        fetch(`https://technology-server-frth8nzdh-arifs-projects-daf4c8dc.vercel.app/addcart/${_id}`,{
             method:'DELETE'
         })
         .then(res =>res.json())

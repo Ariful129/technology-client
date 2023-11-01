@@ -22,7 +22,7 @@ const router=createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader:()=> fetch('http://localhost:5000/products')
+                loader:()=> fetch('https://technology-server-frth8nzdh-arifs-projects-daf4c8dc.vercel.app/products')
                 
             },
             {
@@ -40,17 +40,17 @@ const router=createBrowserRouter([
             {
                 path:'/brand/:name',
                 element:<Brand></Brand>,
-                loader:()=> fetch('http://localhost:5000/products')
+                loader:()=> fetch('https://technology-server-frth8nzdh-arifs-projects-daf4c8dc.vercel.app/products')
             },
             {
                 path:'/detail/:id',
                 element:<PrivateRoutes><Detail></Detail></PrivateRoutes>,
-                loader:()=> fetch('http://localhost:5000/products')
+                loader:()=> fetch('https://technology-server-frth8nzdh-arifs-projects-daf4c8dc.vercel.app/products')
             },
             {
                 path:'/mycart',
                 element:<PrivateRoutes><MyCart></MyCart></PrivateRoutes>,
-                loader:()=> fetch('http://localhost:5000/addcart')
+                loader:()=> fetch('https://technology-server-frth8nzdh-arifs-projects-daf4c8dc.vercel.app/addcart')
             }
         ]
     }
